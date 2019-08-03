@@ -28,8 +28,8 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="74dp"
+        android:layout_height="49dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:text="@string/addHotelDistrict"
@@ -38,8 +38,8 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="74dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:text="@string/addHotelGrade"
