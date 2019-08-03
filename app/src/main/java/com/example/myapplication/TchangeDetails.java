@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class TLogin extends AppCompatActivity {
+public class TchangeDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tlogin);
-    }
-    public void toHome(View view){
-        Intent a = new Intent(this,MHome.class);
-        startActivity(a);
+        setContentView(R.layout.activity_tchange_details);
     }
 
+    public void onclickhome(View view){
+        Intent gghome = new Intent(this,MHome.class);
+        startActivity(gghome);
+    }
 }
