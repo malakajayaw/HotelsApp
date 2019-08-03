@@ -13,9 +13,9 @@ public class TchangeDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tchange_details);
     }
-    public void changepassword(View view){
-        Intent changepwd = new Intent(this,TChangeLoginPwd.class);
-        startActivity(changepwd);
+    public void clicktohome(View view){
+        Intent tohome = new Intent(this,MHome.class);
+        startActivity(tohome);
     }
     public void onclickhome(View view){
         Intent gghome = new Intent(this,MHome.class);
