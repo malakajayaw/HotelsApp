@@ -26,6 +26,12 @@
     <string name="addHotelDistrict">Enter District</string>
     <string name="addHotelGrade">Enter Grade</string>
 
+
+    <string name="addPackageName">Enter Package Name</string>
+    <string name="addPackageDescription">Enter Package Description</string>
+    <string name="addPackageValue">Enter Value</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="addMorePackages">Add More Packages</string>
 </resources>
