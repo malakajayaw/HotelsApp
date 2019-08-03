@@ -13,5 +13,8 @@ public class TChangeLoginPwd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tchange_login_pwd);
     }
-
+    public void gotohm(View view){
+        Intent tohome = new Intent(this,MHome.class);
+        startActivity(tohome);
+    }
 }
