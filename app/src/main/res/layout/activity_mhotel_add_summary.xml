@@ -70,13 +70,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="396dp"
-        android:layout_height="50dp"
+        android:layout_width="394dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -88,11 +95,20 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
-            android:id="@+id/button9"
-            android:layout_width="229dp"
-            android:layout_height="match_parent"
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="sumback"
+            android:text="@string/previous" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sumsubmit"
+            android:text="@string/Submit" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
