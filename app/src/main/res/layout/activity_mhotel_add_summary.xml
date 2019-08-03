@@ -20,25 +20,25 @@
             android:id="@+id/textView19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hotel Name: Example Hotel Name" />
+            android:text="                Hotel Name: Example Hotel Name" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hotel Address: Example Hotel Address" />
+            android:text="                Hotel Address: Example Hotel Address" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hotel City: Example Hotel City" />
+            android:text="                Hotel City: Example Hotel City" />
 
         <TextView
             android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hotel Grade: 5 Star" />
+            android:text="                Hotel Grade: 5 Star" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -70,31 +70,31 @@
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Package 1" />
+                    android:text="        Package 1" />
 
                 <TextView
                     android:id="@+id/textView32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Package 2" />
+                    android:text="        Package 2" />
 
                 <TextView
                     android:id="@+id/textView31"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Package 3" />
+                    android:text="        Package 3" />
 
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Package 4" />
+                    android:text="        Package 4" />
 
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Package 5" />
+                    android:text="        Package 5" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
