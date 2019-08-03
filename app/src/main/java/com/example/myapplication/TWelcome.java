@@ -19,4 +19,8 @@ public class TWelcome extends AppCompatActivity {
         startActivity(singin);
 
     }
+    public void register(View view){
+        Intent singup = new Intent(this,SingUp.class);
+        startActivity(singup);
+    }
 }
