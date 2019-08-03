@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -87,16 +88,21 @@ public class MHome extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_todo) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_addPlaces) {
 
-        } else if (id == R.id.nav_tools) {
+        } else if (id == R.id.nav_managePlaces) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_addHotels) {
+            Intent link = new Intent(this,MAddHotel.class);
+            startActivity(link);
+        } else if (id == R.id.nav_manageHotels) {
+            Intent link = new Intent(this,MAddHotel.class);
+            startActivity(link);
+        } else if (id == R.id.nav_editProfile) {
+            Intent link = new Intent(this,MAddHotel.class);
+            startActivity(link);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
