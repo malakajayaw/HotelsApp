@@ -23,4 +23,9 @@ public class MAddPackage extends AppCompatActivity {
         Intent direct = new Intent(this,MAddHotel.class);
         startActivity(direct);
     }
+
+    public void toSummary(View view){
+        Intent direct = new Intent(this,MHotelAddSummary.class);
+        startActivity(direct);
+    }
 }
