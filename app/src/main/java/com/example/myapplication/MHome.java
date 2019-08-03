@@ -98,10 +98,10 @@ public class MHome extends AppCompatActivity
             Intent link = new Intent(this,MAddHotel.class);
             startActivity(link);
         } else if (id == R.id.nav_manageHotels) {
-            Intent link = new Intent(this,MAddHotel.class);
+            Intent link = new Intent(this,MManageHotels.class);
             startActivity(link);
         } else if (id == R.id.nav_editProfile) {
-            Intent link = new Intent(this,MAddHotel.class);
+            Intent link = new Intent(this,TchangeDetails.class);
             startActivity(link);
         }
 
