@@ -13,7 +13,7 @@ public class TchangeDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tchange_details);
     }
-    public void changepassword(View view){
+    public void changePassword(View view){
         Intent changepwd = new Intent(this,TChangeLoginPwd.class);
         startActivity(changepwd);
     }
