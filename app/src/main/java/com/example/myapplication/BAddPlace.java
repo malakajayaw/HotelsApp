@@ -6,17 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class TWelcome extends AppCompatActivity {
+public class BAddPlace extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_twelcome);
+        setContentView(R.layout.activity_badd_place);
     }
 
-    public void malaka(View view) {
-        Intent a = new Intent(this, BAddPlace.class);
-        startActivity(a);
 
-    }
 }
