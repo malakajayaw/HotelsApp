@@ -14,9 +14,9 @@ public class TWelcome extends AppCompatActivity {
         setContentView(R.layout.activity_twelcome);
     }
 
-    public void malaka(View view) {
-        Intent a = new Intent(this, BAddPlace.class);
-        startActivity(a);
+    public void login(View view) {
+        Intent singin = new Intent(this, TLogin.class);
+        startActivity(singin);
 
     }
 }
