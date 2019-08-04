@@ -34,7 +34,7 @@
                 android:title="@string/menu_manageHotel" />
         </menu>
     </item>
-    <item android:title="@string/menu_contributions">
+    <item android:title="Your Account">
         <menu>
             <item
                 android:id="@+id/nav_editProfile"
