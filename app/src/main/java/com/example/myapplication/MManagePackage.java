@@ -6,20 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MEditHotelSum extends AppCompatActivity {
+public class MManagePackage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medit_hotel_sum);
+        setContentView(R.layout.activity_mmanage_package);
     }
 
-    public void toDeleteP(View view) {
-        Intent redirect = new Intent(this, MHome.class);
-        startActivity(redirect);
-    }
-
-    public void toEditP(View view) {
+    public void toHomeP(View view) {
         Intent redirect = new Intent(this, MHome.class);
         startActivity(redirect);
     }
