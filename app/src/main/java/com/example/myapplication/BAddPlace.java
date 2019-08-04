@@ -13,6 +13,10 @@ public class BAddPlace extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_badd_place);
     }
+    public  void addplaces(View view){
+        Intent addplc = new Intent(this,MHome.class);
+        startActivity(addplc);
+    }
 
 
 }
