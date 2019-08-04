@@ -18,19 +18,19 @@
         <menu>
             <item
                 android:id="@+id/nav_addPlaces"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_addplaces"
                 android:title="@string/menu_addPlaces" />
             <item
                 android:id="@+id/nav_managePlaces"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_menu_manageplaces"
                 android:title="@string/menu_managePlaces" />
             <item
                 android:id="@+id/nav_addHotels"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_addhotel"
                 android:title="@string/menu_addHotel" />
             <item
                 android:id="@+id/nav_manageHotels"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_menu_managehotels"
                 android:title="@string/menu_manageHotel" />
         </menu>
     </item>
@@ -38,7 +38,7 @@
         <menu>
             <item
                 android:id="@+id/nav_editProfile"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_editaccount"
                 android:title="@string/menu_editProfile" />
         </menu>
     </item>
