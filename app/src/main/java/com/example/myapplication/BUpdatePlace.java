@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class BAddPlace extends AppCompatActivity {
+public class BUpdatePlace extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_badd_place);
+        setContentView(R.layout.activity_bupdate_place);
     }
-    public  void addplaces(View view){
-        Intent addplc = new Intent(this,MHome.class);
-        startActivity(addplc);
+    public void updateplaces(View view){
+        Intent updateplc = new Intent(this,MHome.class);
+        startActivity(updateplc);
+
     }
-
-
 }

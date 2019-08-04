@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".TchangeDetails">
 
     <TextView
@@ -13,10 +14,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="User Name :"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -26,10 +28,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="Email :"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -39,10 +42,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="Contact Number :"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -54,7 +58,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -68,7 +72,7 @@
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
@@ -80,7 +84,7 @@
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
@@ -102,9 +106,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Current Password"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText17"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/editText17"
@@ -114,7 +119,7 @@
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText8" />
 
@@ -123,9 +128,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Password"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText18"
-        tools:layout_editor_absoluteX="26dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/editText18"
@@ -135,7 +141,7 @@
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText17" />
 
@@ -147,7 +153,7 @@
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText18" />
 
@@ -156,7 +162,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Retype Password"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText19"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:layout_editor_absoluteX="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

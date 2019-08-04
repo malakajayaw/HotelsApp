@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/choice1"
+    android:background="@drawable/welcome1"
     tools:context=".TWelcome"
 
     >
@@ -17,6 +17,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="104dp"
+        android:background="#1189C9"
         android:onClick="register"
         android:text="Sing Up"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,6 +34,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="#1189C9"
         android:onClick="login"
         android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"

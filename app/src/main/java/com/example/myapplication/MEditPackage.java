@@ -6,20 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MManageHotels extends AppCompatActivity {
+public class MEditPackage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mmanage_hotels);
+        setContentView(R.layout.activity_medit_package);
     }
-
-    public void toHotelEdit(View view){
-        Intent redirect = new Intent(this,MEditHotelsOver.class);
+    public void toDelete(View view){
+        Intent redirect = new Intent(this,MHome.class);
         startActivity(redirect);
     }
-    public void toPackageEdit(View view){
-        Intent redirect = new Intent(this,MEditHotelSum.class);
+    public void toEdit(View view){
+        Intent redirect = new Intent(this,MManagePackage.class);
         startActivity(redirect);
     }
 }

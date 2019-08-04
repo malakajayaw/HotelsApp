@@ -89,11 +89,14 @@ public class MHome extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_todo) {
-
+            Intent link = new Intent(this,BThingsToDo.class);
+            startActivity(link);
         } else if (id == R.id.nav_addPlaces) {
-
+            Intent link = new Intent(this,BAddPlace.class);
+            startActivity(link);
         } else if (id == R.id.nav_managePlaces) {
-
+            Intent link = new Intent(this,BUpdatePlace.class);
+            startActivity(link);
         } else if (id == R.id.nav_addHotels) {
             Intent link = new Intent(this,MAddHotel.class);
             startActivity(link);

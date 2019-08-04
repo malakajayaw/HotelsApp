@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class BAddPlace extends AppCompatActivity {
+public class MManagePackage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_badd_place);
-    }
-    public  void addplaces(View view){
-        Intent addplc = new Intent(this,MHome.class);
-        startActivity(addplc);
+        setContentView(R.layout.activity_mmanage_package);
     }
 
-
+    public void toHomeP(View view) {
+        Intent redirect = new Intent(this, MHome.class);
+        startActivity(redirect);
+    }
 }
