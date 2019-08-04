@@ -91,9 +91,11 @@ public class MHome extends AppCompatActivity
         } else if (id == R.id.nav_todo) {
 
         } else if (id == R.id.nav_addPlaces) {
-
+            Intent link = new Intent(this,BAddPlace.class);
+            startActivity(link);
         } else if (id == R.id.nav_managePlaces) {
-
+            Intent link = new Intent(this,BUpdatePlace.class);
+            startActivity(link);
         } else if (id == R.id.nav_addHotels) {
             Intent link = new Intent(this,MAddHotel.class);
             startActivity(link);
