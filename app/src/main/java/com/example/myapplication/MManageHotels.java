@@ -18,4 +18,8 @@ public class MManageHotels extends AppCompatActivity {
         Intent redirect = new Intent(this,MEditHotelsOver.class);
         startActivity(redirect);
     }
+    public void toPackageEdit(View view){
+        Intent redirect = new Intent(this,MEditHotelsOver.class);
+        startActivity(redirect);
+    }
 }
