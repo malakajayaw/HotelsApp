@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MHotelAddSummary"></activity>
+        <activity android:name=".BUpdatePlace"></activity>
+        <activity android:name=".MHotelAddSummary" />
         <activity android:name=".MAddPackage" />
         <activity android:name=".MManageHotels">
             <intent-filter>
