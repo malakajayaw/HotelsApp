@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MManageHotels">
 
     <LinearLayout
@@ -26,7 +27,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:baselineAligned="false"
-                android:text="        Hotel 1" />
+                android:text="        Hotel 1"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button2"

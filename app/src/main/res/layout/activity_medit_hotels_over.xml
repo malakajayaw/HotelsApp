@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MEditHotelsOver">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
         android:text="Enter Hotel Name"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,6 +25,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
         android:text="Enter Hotel Address"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
@@ -33,6 +36,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
         android:text="Enter District"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
@@ -43,6 +47,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
         android:text="Enter Grade"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
@@ -67,6 +72,7 @@
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView40"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -77,6 +83,7 @@
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView41"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -87,6 +94,7 @@
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView42"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -97,6 +105,7 @@
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView43"
         app:layout_constraintEnd_toEndOf="parent" />
 
