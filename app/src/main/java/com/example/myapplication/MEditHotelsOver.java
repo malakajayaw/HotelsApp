@@ -17,4 +17,8 @@ public class MEditHotelsOver extends AppCompatActivity {
         Intent redirect = new Intent(this,MHome.class);
         startActivity(redirect);
     }
+    public void toDelete(View view){
+        Intent redirect = new Intent(this,MHome.class);
+        startActivity(redirect);
+    }
 }
