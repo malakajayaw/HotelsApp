@@ -20,7 +20,7 @@ public class MEditHotelSum extends AppCompatActivity {
     }
 
     public void toEditP(View view) {
-        Intent redirect = new Intent(this, MHome.class);
+        Intent redirect = new Intent(this, MManagePackage.class);
         startActivity(redirect);
     }
 }
