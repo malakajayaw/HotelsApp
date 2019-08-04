@@ -34,7 +34,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#0091F8"
+        android:background="#1189C9"
         android:onClick="login"
         android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"
