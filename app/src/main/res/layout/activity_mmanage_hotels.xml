@@ -30,73 +30,19 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="9dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:baselineAligned="false"
-                android:text="@string/edit" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="186dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="        Hotel 2" />
+                android:text="Edit Hotel" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="9dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="@string/edit" />
+                android:text="Edit Package" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="186dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="        Hotel 3" />
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="9dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/edit" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="186dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="        Hotel 3" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="9dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/edit" />
-        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
