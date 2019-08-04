@@ -14,13 +14,13 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="zoo"
         android:textColor="@color/colorAccent"
         android:textColorHighlight="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView36"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="zoo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText21"
@@ -30,13 +30,13 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="Dehiwala"
         android:textColor="@color/colorAccent"
         android:textColorHighlight="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView35"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Dehiwala" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText25"
@@ -46,13 +46,13 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="xxxxxx"
         android:textColor="@color/colorAccent"
         android:textColorHighlight="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView34"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="xxxxxx" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView34"
