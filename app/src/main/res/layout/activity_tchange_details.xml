@@ -16,7 +16,7 @@
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -29,7 +29,7 @@
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -42,7 +42,7 @@
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -104,7 +104,7 @@
         android:text="Current Password"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText17"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/editText17"
@@ -125,7 +125,7 @@
         android:text="New Password"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText18"
-        tools:layout_editor_absoluteX="26dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/editText18"
@@ -158,5 +158,5 @@
         android:text="Retype Password"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText19"
-        tools:layout_editor_absoluteX="28dp" />
+        tools:layout_editor_absoluteX="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
