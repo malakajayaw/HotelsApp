@@ -74,4 +74,13 @@
         app:layout_constraintVertical_bias="0.062"
         app:srcCompat="@drawable/zoo" />
 
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="119dp"
+        android:layout_height="68dp"
+        android:onClick="thingstodo"
+        android:text="@string/menu_home"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="612dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
