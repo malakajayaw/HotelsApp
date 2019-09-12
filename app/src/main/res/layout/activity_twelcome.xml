@@ -17,30 +17,34 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="104dp"
-        android:background="#1189C9"
-        android:onClick="register"
-        android:text="Sing Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Tsingin"
-        app:layout_constraintVertical_bias="0.616" />
+        app:layout_constraintVertical_bias="0.616"
+        android:text="Sing Up"
+        android:background="@drawable/buttonlayout"
+        android:textAllCaps="false"
+
+        />
 
     <Button
         android:id="@+id/Tsingin"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="165dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#1189C9"
         android:onClick="login"
-        android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintVertical_bias="0.631"
+        android:text="Log In"
+        android:background="@drawable/buttonlayout"
+        android:textAllCaps="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
