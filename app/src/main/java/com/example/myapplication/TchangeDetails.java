@@ -17,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class TchangeDetails extends AppCompatActivity {
 TextView a,b,c,d;
-Button btn;
+
 DatabaseReference ureff;
 
 
@@ -30,7 +30,7 @@ DatabaseReference ureff;
         b=(TextView)findViewById(R.id.uemailview);
         c=(TextView)findViewById(R.id.ucontactview);
         d=(TextView)findViewById(R.id.upasswordview);
-        btn=(Button)findViewById(R.id.Tcdetails);
+
 
 
                 ureff = FirebaseDatabase.getInstance().getReference().child("User").child("1");
@@ -59,8 +59,8 @@ DatabaseReference ureff;
             }
 
 
-    public void onclickhome(View view){
-        Intent gghome = new Intent(this,MHome.class);
-        startActivity(gghome);
+    public void editprof(View view){
+        Intent editprof = new Intent(this,TeitProf.class);
+        startActivity(editprof);
     }
 }
