@@ -6,33 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".TAnimation">
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="234dp"
-        android:layout_height="101dp"
-        android:text="     Welcome    Reservation.lk"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.63"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
-
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Logo"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="133dp" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="118dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="273dp"
+        android:layout_height="483dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/llogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@
         android:text="User Name :"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/uname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,7 +30,7 @@
         android:text="Email :"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/uemail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -44,7 +44,7 @@
         android:text="Contact Number:"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ucontact"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -64,38 +64,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
-        android:text="Retype Password:"
-        android:textColor="@color/colorAccent"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/Tsingup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
-        app:layout_constraintVertical_bias="0.057" />
-
-    <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/uemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -104,10 +74,10 @@
         android:inputType="textPersonName"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/uname" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/uname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -122,7 +92,7 @@
         app:layout_constraintVertical_bias="0.234" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/ucontact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -131,10 +101,10 @@
         android:inputType="textPersonName"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/uemail" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/upassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -143,10 +113,10 @@
         android:inputType="textPersonName"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/ucontact" />
 
     <Button
-        android:id="@+id/Tsingup"
+        android:id="@+id/usave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -159,6 +129,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.622"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/upassword"
         app:layout_constraintVertical_bias="0.522" />
 </androidx.constraintlayout.widget.ConstraintLayout>
