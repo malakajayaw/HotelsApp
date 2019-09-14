@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,8 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class SingUp extends AppCompatActivity {
@@ -19,6 +23,7 @@ EditText uname,uemail,ucontact,upassword;
 Button usave;
 DatabaseReference uref;
 User usr;
+long uid=0;
 
 
 
@@ -37,7 +42,18 @@ User usr;
         usr = new User();
 
         uref = FirebaseDatabase.getInstance().getReference().child("User");
+        uref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists())
+                    uid=(dataSnapshot.getChildrenCount());
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         usave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +64,8 @@ User usr;
                 usr.setUmobile(umobile);
                 usr.setUpassword(upassword.getText().toString().trim());
 
-                uref.child("user1").push().setValue(usr);
+                
+                uref.child(String.valueOf(uid+1)).setValue(usr);
                 Toast.makeText(SingUp.this,"SuingedUp Successfully!",Toast.LENGTH_LONG).show();
             }
         });
