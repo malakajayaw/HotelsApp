@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MEditHotelsOver extends AppCompatActivity {
 
     EditText Hname, Haddress, Hdistrict, Hgrade;
-    Button addHotel;
+
     DatabaseReference dbref;
     Hotel h1;
     long Hid;
@@ -26,6 +26,7 @@ public class MEditHotelsOver extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medit_hotels_over);
+
         Hname = (EditText)findViewById(R.id.editText27);
         Haddress = (EditText)findViewById(R.id.editText28);
         Hdistrict = (EditText)findViewById(R.id.editText29);
@@ -37,7 +38,7 @@ public class MEditHotelsOver extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String hname =dataSnapshot.child("hname").getValue().toString();
-                String haddress =dataSnapshot.child("haddress").getValue().toString();
+                String haddress =dataSnapshot.child("hadress").getValue().toString();
                 String hdistrict =dataSnapshot.child("hdistrict").getValue().toString();
                 String hgrade =dataSnapshot.child("hgrade").getValue().toString();
 
