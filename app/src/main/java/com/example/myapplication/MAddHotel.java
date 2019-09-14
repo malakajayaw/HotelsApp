@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MAddHotel extends AppCompatActivity {
 
@@ -27,6 +28,10 @@ public class MAddHotel extends AppCompatActivity {
         Hgrade = (EditText)findViewById(R.id.editText12);
 
         addHotel = (Button)findViewById(R.id.button4);
+
+        h1 = new Hotel();
+
+        dbref = FirebaseDatabase.getInstance().getReference().child("Hotel");
     }
     public void toAddPackage(View view){
         Intent direct = new Intent(this,MAddPackage.class);
