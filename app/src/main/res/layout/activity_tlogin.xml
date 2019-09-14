@@ -23,7 +23,9 @@
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
+        app:layout_constraintVertical_bias="0.327"
+
+        />
 
     <Button
         android:id="@+id/Tloginusr"
@@ -40,7 +42,11 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Tpassword"
-        app:layout_constraintVertical_bias="0.246" />
+        app:layout_constraintVertical_bias="0.246"
+        android:background="@drawable/buttonlayout"
+        android:textAllCaps="false"
+       
+       />
 
     <EditText
         android:id="@+id/Tusername"
@@ -52,6 +58,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.38"
@@ -68,6 +75,7 @@
         android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toEndOf="@+id/textView2"

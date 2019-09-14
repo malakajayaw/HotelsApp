@@ -2,7 +2,9 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class BThingsToDo extends AppCompatActivity {
 
@@ -10,5 +12,9 @@ public class BThingsToDo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bthings_to_do);
+    }
+    public  void  thingstodo(View view){
+        Intent backtohm = new Intent(this,MHome.class);
+        startActivity(backtohm);
     }
 }
