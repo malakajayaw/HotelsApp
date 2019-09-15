@@ -62,7 +62,10 @@ public class MEditHotelsOver extends AppCompatActivity {
         h1.setHdistrict(Hdistrict.getText().toString().trim());
         h1.setHgrade(tempGrade);
 
-        dbref.child("1").setValue(h1);
+        dbref.child("hname").setValue(h1.getHname());
+        dbref.child("hadress").setValue(h1.getHadress());
+        dbref.child("hdistrict").setValue(h1.getHdistrict());
+        dbref.child("hgrade").setValue(h1.getHgrade());
 
         Intent redirect = new Intent(this,MHome.class);
         startActivity(redirect);
