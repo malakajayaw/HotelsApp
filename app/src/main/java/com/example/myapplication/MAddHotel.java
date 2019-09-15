@@ -62,7 +62,7 @@ public class MAddHotel extends AppCompatActivity {
                 h1.setHgrade(tempGrade);
 
                 dbref.child(String.valueOf(Hid+1)).setValue(h1);
-                Toast.makeText(MAddHotel.this,"Hotel Added Successfully!",Toast.LENGTH_LONG).show();
+                Toast.makeText(MAddHotel.this,"Hotel Added!",Toast.LENGTH_LONG).show();
 
 
             }
