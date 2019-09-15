@@ -73,6 +73,11 @@ public class MEditHotelsOver extends AppCompatActivity {
         startActivity(redirect);
     }
     public void toDelete(View view){
+
+        dbref = FirebaseDatabase.getInstance().getReference().child("Hotel").child("1");
+
+        dbref.removeValue();
+
         Intent redirect = new Intent(this,MHome.class);
         startActivity(redirect);
     }
