@@ -11,4 +11,8 @@ public class TeitProf extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teit_prof);
     }
+
+    public void updateprof(){
+
+    }
 }

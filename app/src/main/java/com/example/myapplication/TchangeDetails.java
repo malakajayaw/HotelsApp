@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -17,9 +18,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class TchangeDetails extends AppCompatActivity {
 TextView a,b,c,d;
-
+Button btn;
 DatabaseReference ureff;
-
+String uname,uemail,umobile,upassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ DatabaseReference ureff;
         c=(TextView)findViewById(R.id.ucontactview);
         d=(TextView)findViewById(R.id.upasswordview);
 
+        btn=(Button)findViewById(R.id.udelete);
 
 
                 ureff = FirebaseDatabase.getInstance().getReference().child("User").child("1");
@@ -38,10 +40,10 @@ DatabaseReference ureff;
                 ureff.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String uname =dataSnapshot.child("uname").getValue().toString();
-                        String uemail =dataSnapshot.child("uemail").getValue().toString();
-                        String umobile =dataSnapshot.child("umobile").getValue().toString();
-                        String upassword =dataSnapshot.child("upassword").getValue().toString();
+                         uname =dataSnapshot.child("uname").getValue().toString();
+                         uemail =dataSnapshot.child("uemail").getValue().toString();
+                         umobile =dataSnapshot.child("umobile").getValue().toString();
+                         upassword =dataSnapshot.child("upassword").getValue().toString();
 
                         a.setText(uname);
                         b.setText(uemail);
@@ -51,11 +53,27 @@ DatabaseReference ureff;
 
                     }
 
+
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                       deluser(uname);
+                    }
+                });
+
+            }
+            public void deluser(String uname){
+            DatabaseReference deluser =FirebaseDatabase.getInstance().getReference("User").child(uname);
+
+            deluser.removeValue();
+
+                Toast.makeText(TchangeDetails.this,"Successfully Deleted",Toast.LENGTH_LONG).show();
             }
 
 
