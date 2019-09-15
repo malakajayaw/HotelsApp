@@ -62,6 +62,8 @@ public class MEditHotelsOver extends AppCompatActivity {
         h1.setHdistrict(Hdistrict.getText().toString().trim());
         h1.setHgrade(tempGrade);
 
+        dbref = FirebaseDatabase.getInstance().getReference().child("Hotel").child("1");
+
         dbref.child("hname").setValue(h1.getHname());
         dbref.child("hadress").setValue(h1.getHadress());
         dbref.child("hdistrict").setValue(h1.getHdistrict());
