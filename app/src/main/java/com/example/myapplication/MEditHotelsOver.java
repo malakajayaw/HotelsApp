@@ -55,6 +55,18 @@ public class MEditHotelsOver extends AppCompatActivity {
         });
     }
     public void toHomeM(View view){
+        int tempGrade=Integer.parseInt(Hgrade.getText().toString().trim());
+
+        h1.setHname(Hname.getText().toString().trim());
+        h1.setHadress(Haddress.getText().toString().trim());
+        h1.setHdistrict(Hdistrict.getText().toString().trim());
+        h1.setHgrade(tempGrade);
+
+        dbref.child("hname").setValue(h1.getHname());
+        dbref.child("hadress").setValue(h1.getHadress());
+        dbref.child("hdistrict").setValue(h1.getHdistrict());
+        dbref.child("hgrade").setValue(h1.getHgrade());
+
         Intent redirect = new Intent(this,MHome.class);
         startActivity(redirect);
     }
