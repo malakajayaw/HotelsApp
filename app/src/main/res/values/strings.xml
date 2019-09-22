@@ -36,4 +36,11 @@
     <string name="addMorePackages">Add More Packages</string>
     <string name="edit">Edit</string>
     <string name="Submit">Submit</string>
+
+    <string name="unameerr">Retype Username</string>
+    <string name="uemailerr">Invald Email</string>
+    <string name="uconterr">Invalid Contact Number</string>
+    <string name="upwderr">Fill the Password</string>
+
+
 </resources>
