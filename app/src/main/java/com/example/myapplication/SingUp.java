@@ -48,6 +48,7 @@ long uid=0;
         usr = new User();
 
         uref = FirebaseDatabase.getInstance().getReference().child("User");
+
         uref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -81,7 +82,7 @@ long uid=0;
 
 
 
-                if(name.isEmpty() && email.isEmpty() && moblie.isEmpty() && pwd.isEmpty()){
+                if(name.isEmpty() || email.isEmpty() || moblie.isEmpty() || pwd.isEmpty()){
                     Toast.makeText(SingUp.this,"Fill the details correctly!!",Toast.LENGTH_LONG).show();
                 }
                 else{

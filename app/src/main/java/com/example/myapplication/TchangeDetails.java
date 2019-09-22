@@ -35,7 +35,7 @@ String uname,uemail,umobile,upassword;
         btn=(Button)findViewById(R.id.udelete);
 
 
-                ureff = FirebaseDatabase.getInstance().getReference().child("User").child("2");
+                ureff = FirebaseDatabase.getInstance().getReference().child("User").child("1");
 
                 ureff.addValueEventListener(new ValueEventListener() {
                     @Override
@@ -71,12 +71,14 @@ String uname,uemail,umobile,upassword;
 
             }
             public void deluser(String uname){
-            DatabaseReference deluser =FirebaseDatabase.getInstance().getReference("User").child("2");
+            DatabaseReference deluser =FirebaseDatabase.getInstance().getReference("User").child("3");
 
-            deluser.removeValue();
 
-                Intent delhome = new Intent(this,TeitProf.class);
+
+                Intent delhome = new Intent(this,TWelcome.class);
                 startActivity(delhome);
+
+                deluser.removeValue();
 
                 Toast.makeText(TchangeDetails.this,"Successfully Deleted",Toast.LENGTH_LONG).show();
             }
