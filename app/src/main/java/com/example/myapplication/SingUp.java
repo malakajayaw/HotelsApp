@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +25,7 @@ EditText uname,uemail,ucontact,upassword;
 Button usave;
 DatabaseReference uref;
 User usr;
+
 long uid=0;
 
 
@@ -32,6 +35,7 @@ long uid=0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sing_up);
 
+
         uname =(EditText)findViewById(R.id.uname);
         uemail=(EditText)findViewById(R.id.uemail);
         ucontact =(EditText)findViewById(R.id.ucontact);
@@ -39,9 +43,12 @@ long uid=0;
 
         usave=(Button)findViewById(R.id.usave);
 
+
+
         usr = new User();
 
         uref = FirebaseDatabase.getInstance().getReference().child("User");
+
         uref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -53,7 +60,9 @@ long uid=0;
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
+
         });
+
         usave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,10 +73,30 @@ long uid=0;
                 usr.setUmobile(umobile);
                 usr.setUpassword(upassword.getText().toString().trim());
 
-                
-                uref.child(String.valueOf(uid+1)).setValue(usr);
-                Toast.makeText(SingUp.this,"SuingedUp Successfully!",Toast.LENGTH_LONG).show();
+                String name = uname.getText().toString();
+                String email = uemail.getText().toString();
+                String moblie = ucontact.getText().toString();
+                String pwd = upassword.getText().toString();
+
+
+
+
+
+                if(name.isEmpty() || email.isEmpty() || moblie.isEmpty() || pwd.isEmpty()){
+                    Toast.makeText(SingUp.this,"Fill the details correctly!!",Toast.LENGTH_LONG).show();
+                }
+                else{
+
+
+                    Toast.makeText(SingUp.this,"SuingedUp Successfully!",Toast.LENGTH_LONG).show();
+                    uref.child(String.valueOf(uid+1)).setValue(usr);
+
+                    Intent a = new Intent(SingUp.this,MHome.class);
+                    startActivity(a);
+                }
+
             }
+
         });
 
 
@@ -85,9 +114,7 @@ long uid=0;
 
 
 
-    public void tohome(View view){
-        Intent a = new Intent(this,MHome.class);
-        startActivity(a);
-    }
+
+
 
 }

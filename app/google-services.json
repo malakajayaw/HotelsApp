@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "638641455236",
-    "firebase_url": "https://myapplication2-f11f5.firebaseio.com",
-    "project_id": "myapplication2-f11f5",
-    "storage_bucket": "myapplication2-f11f5.appspot.com"
+    "project_number": "56393933385",
+    "firebase_url": "https://hotelsapp-34777.firebaseio.com",
+    "project_id": "hotelsapp-34777",
+    "storage_bucket": "hotelsapp-34777.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:638641455236:android:3ca74b8bf2b9226c9542d1",
+        "mobilesdk_app_id": "1:56393933385:android:f944887a05f219ab6d9598",
         "android_client_info": {
           "package_name": "com.example.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "638641455236-rge0cujkgfv3m8iat6pr92j01guhce6f.apps.googleusercontent.com",
+          "client_id": "56393933385-ot0gkvs6eipir76udejef83gcbtfivq5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.myapplication",
-            "certificate_hash": "3d4ab63c0eef34f451b756a2193b25ec2cfc38eb"
+            "certificate_hash": "bef9ce20c7d872e43b0483bceab6c4d4a61a6cd3"
           }
         },
         {
-          "client_id": "638641455236-8sm7agtu2rgkdkllvkh0chbqukvj50j2.apps.googleusercontent.com",
+          "client_id": "56393933385-jotop5v1ubnjqe1ho1oj9duiqdkb1t62.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAm7jytLIBTII8DSkvozepNSa17V-O_XTs"
+          "current_key": "AIzaSyAmdunDivfGsYkRRRm4-YKGtVxT-6MknRo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "638641455236-8sm7agtu2rgkdkllvkh0chbqukvj50j2.apps.googleusercontent.com",
+              "client_id": "56393933385-jotop5v1ubnjqe1ho1oj9duiqdkb1t62.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
