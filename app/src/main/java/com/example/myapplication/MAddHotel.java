@@ -61,16 +61,19 @@ public class MAddHotel extends AppCompatActivity {
                 h1.setHdistrict(Hdistrict.getText().toString().trim());
                 h1.setHgrade(tempGrade);
 
+
+
                 dbref.child(String.valueOf(Hid+1)).setValue(h1);
                 Toast.makeText(MAddHotel.this,"Hotel Added!",Toast.LENGTH_LONG).show();
 
+                Intent direct = new Intent(MAddHotel.this,MHome.class);
+               startActivity(direct);
 
             }
         });
 
     }
     public void toAddPackage(View view){
-        Intent direct = new Intent(this,MAddPackage.class);
-        startActivity(direct);
+
     }
 }

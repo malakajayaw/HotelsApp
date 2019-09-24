@@ -14,10 +14,10 @@ public class MAddPackage extends AppCompatActivity {
         setContentView(R.layout.activity_madd_package);
     }
 
-    public void morePackages(View view){
-        Intent direct = new Intent(this,MAddPackage.class);
-        startActivity(direct);
-    }
+    //public void morePackages(View view){
+     //   Intent direct = new Intent(this,MAddPackage.class);
+      //  startActivity(direct);
+    //}
 
     public void back(View view){
         Intent direct = new Intent(this,MAddHotel.class);
